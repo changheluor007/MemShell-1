@@ -22,6 +22,18 @@
 2. 访问`/mem.jsp`或`/hello-servlet`即可注册免杀内存马
 3. 访问`/scan.jsp`查看检测结果
 
+
+## 自定义
+如何自定义合理的Filter名：
+
+修改这里的数组
+```java
+String[] nameArray = new String[]{"testFilter", "loginFilter", "coreFilter",
+        "userFilter", "manageFilter", "shiroFilter", "indexFilter"};
+```
+
+会自动打乱遍历数组，判断Filter名是否重复，然后构造对应的类名和对应的字节码写入目标classpath
+
 ## 效果
 
 看起来和真实的`Filter`没有区别，存在真正的class文件
