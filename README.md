@@ -42,6 +42,10 @@ String[] nameArray = new String[]{"testFilter", "loginFilter", "coreFilter",
 在`web.xml`配置文件中也真实存在
 ![](https://github.com/EmYiQing/MemShell/blob/master/img/0066.png)
 
+## 计划
+
+计划后续编写Listener型和Servlet型免杀，甚至SpringMVC
+
 ## 免责申明
 
 **未经授权许可使用本项目攻击目标是非法的**
