@@ -42,9 +42,9 @@ String[] nameArray = new String[]{"testFilter", "loginFilter", "coreFilter",
 在`web.xml`配置文件中也真实存在
 ![](https://github.com/EmYiQing/MemShell/blob/master/img/0066.png)
 
-## 计划
+## 思考
 
-计划后续编写Listener型和Servlet型免杀，甚至SpringMVC
+一点思考：这种方式是否会导致内存马的持久化？因为字节码真实存在且`web.xml`也有配置
 
 ## 免责申明
 
