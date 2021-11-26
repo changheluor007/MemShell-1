@@ -1,7 +1,7 @@
-# 免杀Tomcat Filter型内存马
+# 记录一些Tomcat内存马
 
 ## 介绍
-实现了一种比较顽固的内存马：
+实现了一种比较顽固的内存马：`Shell.java`和`mem.jsp`
 1. 随机给一个合理的filter名称
 2. 动态生成合理filter类名的字节码
 3. 将字节码写入classpath中合理的路径
@@ -42,9 +42,13 @@ String[] nameArray = new String[]{"testFilter", "loginFilter", "coreFilter",
 在`web.xml`配置文件中也真实存在
 ![](https://github.com/EmYiQing/MemShell/blob/master/img/0066.png)
 
-## 计划
+## 其他
 
-计划后续编写Listener型和Servlet型免杀，甚至SpringMVC
+1. 已添加Listener型内存马：`listener.jsp`
+
+2. 修改了`c0ny1`师傅的检测脚本`scan.jsp`已支持Listener
+
+3. 参考 [从一个被Tomcat拒绝的漏洞到特殊内存马](https://xz.aliyun.com/t/10577) 实现的特殊内存马：`WsServlet.java`和`tomcat-websocket .jar`
 
 ## 免责申明
 
